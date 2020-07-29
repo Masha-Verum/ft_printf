@@ -6,7 +6,7 @@
 /*   By: mbantam <mbantam@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 19:27:21 by mbantam           #+#    #+#             */
-/*   Updated: 2020/07/29 12:06:27 by mbantam          ###   ########.fr       */
+/*   Updated: 2020/07/29 12:22:42 by mbantam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ typedef	struct		s_tmpl
 	unsigned int	error;
 }					t_tmpl;
 
-void				get_d(int long value, t_tmpl *data);
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t nmemb, size_t size);
 char				*ft_itoa(int n);

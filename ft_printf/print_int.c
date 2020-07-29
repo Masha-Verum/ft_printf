@@ -6,13 +6,13 @@
 /*   By: mbantam <mbantam@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 19:34:50 by mbantam           #+#    #+#             */
-/*   Updated: 2020/07/29 12:03:25 by mbantam          ###   ########.fr       */
+/*   Updated: 2020/07/29 12:24:04 by mbantam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	value_negative(t_tmpl *tmpl, int value)
+static void	value_negative(t_tmpl *tmpl, int value)
 {
 	if (value < 0)
 	{
@@ -26,7 +26,7 @@ void	value_negative(t_tmpl *tmpl, int value)
 	}
 }
 
-int		d_precision(int value, t_tmpl *tmpl)
+static int	d_precision(int value, t_tmpl *tmpl)
 {
 	char *str_num;
 
@@ -48,7 +48,7 @@ int		d_precision(int value, t_tmpl *tmpl)
 	return (tmpl->error);
 }
 
-void	get_d(int long value, t_tmpl *tmpl)
+static void	get_d(int long value, t_tmpl *tmpl)
 {
 	int	long	new_value;
 	int			i;

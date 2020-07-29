@@ -6,29 +6,12 @@
 /*   By: mbantam <mbantam@student.21-school.ru>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 19:34:56 by mbantam           #+#    #+#             */
-/*   Updated: 2020/07/29 12:03:50 by mbantam          ###   ########.fr       */
+/*   Updated: 2020/07/29 12:10:54 by mbantam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-/*
-static void		print_u(t_tmpl *template, int base, char *symbols)
-{
-	unsigned long long int value;
 
-	value = va_arg(template->args, unsigned int);
-	get_u_x(value, base, template, symbols);
-}
-*/
-/*
-static void		print_d(t_tmpl *tmpl)
-{
-	int long long value;
-
-	value = va_arg(tmpl->args, int);
-	get_d(value, tmpl);
-}
-*/
 int				print_type(t_tmpl *template)
 {
 	if (template->type == '%')
